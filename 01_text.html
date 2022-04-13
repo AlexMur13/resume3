@@ -6,109 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="alex, cv, resume">
   <meta name="description" content="Это сайт - резюме Алекса Мур">
+  <link rel="stylesheet" href="styles.css">
   <title>Alex Resume</title>
 </head>
 <body>
 
-  <img src="Я.png" alt="Alex Mur" width="200">
+  <div class="container">
 
-  <h1>Alex</h1>
+    <div> 
+      <img src="Я.png" alt="Alex Mur" class="avatar">
 
-  <h2>Mur</h2>
+      <div class="info-text">
+        <h1>Alex</h1>
 
-  <p>Привет люблю спорт<strong><em>Сейчас занимаюсь Java изучением.Люблю животных</em></p>
+        <h2>Mur</h2>
+
+          <p>Привет люблю спорт<strong><em>Сейчас занимаюсь Java изучением.Люблю   животных</em></p>
+  
+          <p>Изучаю иностранные языки.<em> Нравится гулять.</em>Люблю девушек!</p>
+
+          <p>Книги лучше телевизора </p>
+
+        <h4>Список социальных сетей</h4>
+
+      <a href="https://t.me/Alexandr30786" target="_blank">Telegram</a>
+      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+      <a href="https://vk.com/a.mur1986" target="_blank">VK</a>
+    </div>
+  </div>
+
+<hr>
+
+<div class="card bg-green">
+    <h2>Мои хобби</h2>
+
+    <ol class="list">
+      <li>Путешествие</li>
+      <li>Блоггинг</li>
+      <li>Хоккей</li>
+      <li>Золото</li>
+    </ol>
+  </div>
 
   <hr>
   
-  <p>Изучаю иностранные языки.<em> Нравится гулять.</em>Люблю девушек!</p>
+  <div class="card bg-red">
+    <h2>Место работы</h2>
 
-  <p>Книги лучше телевизора </p>
+    <ol class="link-list">
+      <li>2011-2022 Спартак</li>
+      <li>2013-2014 Динамо</li>
+      <li>2014-2017 Ижевск</li>
+      <li>2018-2019 Молот</li>
+      <li>2019-2022 Монтреаль</li>
+    </ol>
+  </div> 
 
-  <h4>Список социальных сетей</h4>
+  <hr>
 
-  <a href="https://t.me/Alexandr30786" target="_blank">Telegram</a>
-  |
-  <a href="https://vk.com/a.mur1986" target="_blank">VK</a>
-  |
-  <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-  
-  <h2>Мои хобби</h2>
+  <div class="card">
+      
 
-  <ol>
-    <li>Путешествие</li>
-    <li>Блоггинг</li>
-    <li>Хоккей</li>
-    <li>Золото</li>
-  </ol>
+    <form action="/" class="form">
+      <h2>Связаться со мной</h2>
 
-  <h2>Стаж тренировок</h2>
+      <div class="form-row">
 
-  <table>
-    <thead>
-      <tr>
-        <th>Название команды</th>
-        <th>Амплуа</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Тампа БЭЙ</td>
-        <td>Защитник</td>
-        <td>2001-2002</td>
-      </tr>
-      <tr>
-        <td>Колорадо</td>
-        <td>Нападающий</td>
-        <td>2002-2003</td>
-      </tr>
-      <tr>
-        <td>Вашингтон</td>
-        <td>Защитник</td>
-        <td>2005-2010</td>
-      </tr>
-      <tr>
-        <td>Пантеры</td>
-        <td>Защитник</td>
-        <td>2015-2018</td>
-      </tr>
-      <tr>
-        <td>Торонто</td>
-        <td>Нападающий</td>
-        <td>2020-сейчас</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>Связаться со мной</h2>
-
-  <form action="/">
-    <div>
+    <div class="form-group">
       <label for="name"> Ваше имя:</label>
       <input type="text" id="name"
       placeholder="Введите имя">
     </div>
 
-    <div>
+    <div class="form-group">
       <label for="email"> Ваше email:</label>
       <input type="email" id="email"
       placeholder="Введите email">
     </div>
+  </div>
 
-    <div>
+    <div class="form-group">
       <label for="massege"> Ваше сообщение:</label>
-      <br>
       <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
     </div>
 
-    <input type="submit" value="Отправить!">
+    <input class="btn" type="submit" value="Отправить!">
   </form>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  
+    <hr>
+</div>
 </body>
 </html>
